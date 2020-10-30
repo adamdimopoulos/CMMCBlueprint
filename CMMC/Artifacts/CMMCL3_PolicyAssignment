@@ -1,0 +1,55 @@
+{
+  "kind": "policyAssignment",
+  "properties": {
+    "displayName": "[Preview]: CMMC L3",
+    "dependsOn": [],
+    "policyDefinitionId": "/subscriptions/d0613210-9dc8-422d-95b5-bc2ff8661467/providers/Microsoft.Authorization/policySetDefinitions/CMMCL3",
+    "parameters": {
+      "IncludeArcMachines": {
+        "value": "[parameters('[Preview]:CMMCL3_IncludeArcMachines')]"
+      },
+      "membersToExcludeInLocalAdministratorsGroup": {
+        "value": "[parameters('[Preview]:CMMCL3_membersToExcludeInLocalAdministratorsGroup')]"
+      },
+      "membersToIncludeInLocalAdministratorsGroup": {
+        "value": "[parameters('[Preview]:CMMCL3_membersToIncludeInLocalAdministratorsGroup')]"
+      },
+      "listOfLocationsForNetworkWatcher": {
+        "value": "[parameters('[Preview]:CMMCL3_listOfLocationsForNetworkWatcher')]"
+      },
+      "logAnalyticsWorkspaceIDForVMAgents": {
+        "value": "[parameters('[Preview]:CMMCL3_logAnalyticsWorkspaceIDForVMAgents')]"
+      },
+      "pHPLatestVersionForAppServices": {
+        "value": "[parameters('[Preview]:CMMCL3_pHPLatestVersionForAppServices')]"
+      },
+      "windowsImagesToAddToLogAgentAuditScope": {
+        "value": "[parameters('[Preview]:CMMCL3_windowsImagesToAddToLogAgentAuditScope')]"
+      },
+      "linuxImagesToAddToLogAgentAuditScope": {
+        "value": "[parameters('[Preview]:CMMCL3_linuxImagesToAddToLogAgentAuditScope')]"
+      },
+      "javaLatestVersionForAppServices": {
+        "value": "[parameters('[Preview]:CMMCL3_javaLatestVersionForAppServices')]"
+      },
+      "windowsPythonLatestVersionForAppServices": {
+        "value": "[parameters('[Preview]:CMMCL3_windowsPythonLatestVersionForAppServices')]"
+      },
+      "linuxPythonLatestVersionForAppServices": {
+        "value": "[parameters('[Preview]:CMMCL3_linuxPythonLatestVersionForAppServices')]"
+      },
+      "listOfResourceTypesForDiagnosticLogs": {
+        "value": "[parameters('[Preview]:CMMCL3_listOfResourceTypesForDiagnosticLogs')]"
+      },
+      "minimumTLSVersionForWindowsServers": {
+        "value": "[parameters('[Preview]:CMMCL3_minimumTLSVersionForWindowsServers')]"
+      },
+      "ResourceGroupLocationforASCExport": {
+        "value": "[parameters('[Preview]:CMMCL3_ResourceGroupLocationforASCExport')]"
+      },
+      "ResourceGroupNameASCExport": {
+        "value": "[parameters('[Preview]:CMMCL3_ResourceGroupNameASCExport')]"
+      }
+    }
+  }
+}
