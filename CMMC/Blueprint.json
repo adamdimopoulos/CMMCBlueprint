@@ -1,0 +1,228 @@
+{
+  "properties": {
+    "description": "Assigns policies to address specific CMMC Level 3 requirements.",
+    "targetScope": "subscription",
+    "parameters": {
+      "[Preview]:CMMCL3_IncludeArcMachines": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Include Arc connected servers for Guest Configuration policies (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": "false",
+        "allowedValues": [
+          "true",
+          "false"
+        ]
+      },
+      "[Preview]:CMMCL3_membersToExcludeInLocalAdministratorsGroup": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: List of users excluded from Windows VM Administrators group (Policy: [Preview]: CMMC L3)"
+        },
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_membersToIncludeInLocalAdministratorsGroup": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: List of users that must be included in Windows VM Administrators group (Policy: [Preview]: CMMC L3)"
+        },
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_listOfLocationsForNetworkWatcher": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[Preview]: List of regions where Network Watcher should be enabled (Policy: [Preview]: CMMC L3)",
+          "strongType": "location"
+        },
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_logAnalyticsWorkspaceIDForVMAgents": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Log Analytics workspace ID for VM agent reporting (Policy: [Preview]: CMMC L3)"
+        },
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_pHPLatestVersionForAppServices": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Latest PHP version (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": "7.3",
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_windowsImagesToAddToLogAgentAuditScope": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[Preview]: Optional: List of Windows VM images that support Log Analytics agent to add to audit scope (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": [],
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_linuxImagesToAddToLogAgentAuditScope": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[Preview]: Optional: List of Linux VM images that support Log Analytics agent to add to audit scope (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": [],
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_javaLatestVersionForAppServices": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Latest Java version (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": "11",
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_windowsPythonLatestVersionForAppServices": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Latest Windows Python version (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": "3.6",
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_linuxPythonLatestVersionForAppServices": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Latest Linux Python version (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": "3.8",
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_listOfResourceTypesForDiagnosticLogs": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[Preview]: List of resource types that should have diagnostic logs enabled (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": [
+          "Microsoft.AnalysisServices/servers",
+          "Microsoft.ApiManagement/service",
+          "Microsoft.Network/applicationGateways",
+          "Microsoft.Automation/automationAccounts",
+          "Microsoft.ContainerInstance/containerGroups",
+          "Microsoft.ContainerRegistry/registries",
+          "Microsoft.ContainerService/managedClusters",
+          "Microsoft.Batch/batchAccounts",
+          "Microsoft.Cdn/profiles/endpoints",
+          "Microsoft.CognitiveServices/accounts",
+          "Microsoft.DocumentDB/databaseAccounts",
+          "Microsoft.DataFactory/factories",
+          "Microsoft.DataLakeAnalytics/accounts",
+          "Microsoft.DataLakeStore/accounts",
+          "Microsoft.EventGrid/eventSubscriptions",
+          "Microsoft.EventGrid/topics",
+          "Microsoft.EventHub/namespaces",
+          "Microsoft.Network/expressRouteCircuits",
+          "Microsoft.Network/azureFirewalls",
+          "Microsoft.HDInsight/clusters",
+          "Microsoft.Devices/IotHubs",
+          "Microsoft.KeyVault/vaults",
+          "Microsoft.Network/loadBalancers",
+          "Microsoft.Logic/integrationAccounts",
+          "Microsoft.Logic/workflows",
+          "Microsoft.DBforMySQL/servers",
+          "Microsoft.Network/networkInterfaces",
+          "Microsoft.Network/networkSecurityGroups",
+          "Microsoft.DBforPostgreSQL/servers",
+          "Microsoft.PowerBIDedicated/capacities",
+          "Microsoft.Network/publicIPAddresses",
+          "Microsoft.RecoveryServices/vaults",
+          "Microsoft.Cache/redis",
+          "Microsoft.Relay/namespaces",
+          "Microsoft.Search/searchServices",
+          "Microsoft.ServiceBus/namespaces",
+          "Microsoft.SignalRService/SignalR",
+          "Microsoft.Sql/servers/databases",
+          "Microsoft.Sql/servers/elasticPools",
+          "Microsoft.StreamAnalytics/streamingjobs",
+          "Microsoft.TimeSeriesInsights/environments",
+          "Microsoft.Network/trafficManagerProfiles",
+          "Microsoft.Compute/virtualMachines",
+          "Microsoft.Compute/virtualMachineScaleSets",
+          "Microsoft.Network/virtualNetworks",
+          "Microsoft.Network/virtualNetworkGateways"
+        ],
+        "allowedValues": [
+          "Microsoft.AnalysisServices/servers",
+          "Microsoft.ApiManagement/service",
+          "Microsoft.Network/applicationGateways",
+          "Microsoft.Automation/automationAccounts",
+          "Microsoft.ContainerInstance/containerGroups",
+          "Microsoft.ContainerRegistry/registries",
+          "Microsoft.ContainerService/managedClusters",
+          "Microsoft.Batch/batchAccounts",
+          "Microsoft.Cdn/profiles/endpoints",
+          "Microsoft.CognitiveServices/accounts",
+          "Microsoft.DocumentDB/databaseAccounts",
+          "Microsoft.DataFactory/factories",
+          "Microsoft.DataLakeAnalytics/accounts",
+          "Microsoft.DataLakeStore/accounts",
+          "Microsoft.EventGrid/eventSubscriptions",
+          "Microsoft.EventGrid/topics",
+          "Microsoft.EventHub/namespaces",
+          "Microsoft.Network/expressRouteCircuits",
+          "Microsoft.Network/azureFirewalls",
+          "Microsoft.HDInsight/clusters",
+          "Microsoft.Devices/IotHubs",
+          "Microsoft.KeyVault/vaults",
+          "Microsoft.Network/loadBalancers",
+          "Microsoft.Logic/integrationAccounts",
+          "Microsoft.Logic/workflows",
+          "Microsoft.DBforMySQL/servers",
+          "Microsoft.Network/networkInterfaces",
+          "Microsoft.Network/networkSecurityGroups",
+          "Microsoft.DBforPostgreSQL/servers",
+          "Microsoft.PowerBIDedicated/capacities",
+          "Microsoft.Network/publicIPAddresses",
+          "Microsoft.RecoveryServices/vaults",
+          "Microsoft.Cache/redis",
+          "Microsoft.Relay/namespaces",
+          "Microsoft.Search/searchServices",
+          "Microsoft.ServiceBus/namespaces",
+          "Microsoft.SignalRService/SignalR",
+          "Microsoft.Sql/servers/databases",
+          "Microsoft.Sql/servers/elasticPools",
+          "Microsoft.StreamAnalytics/streamingjobs",
+          "Microsoft.TimeSeriesInsights/environments",
+          "Microsoft.Network/trafficManagerProfiles",
+          "Microsoft.Compute/virtualMachines",
+          "Microsoft.Compute/virtualMachineScaleSets",
+          "Microsoft.Network/virtualNetworks",
+          "Microsoft.Network/virtualNetworkGateways"
+        ]
+      },
+      "[Preview]:CMMCL3_minimumTLSVersionForWindowsServers": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Minimum TLS version for Windows web servers (Policy: [Preview]: CMMC L3)"
+        },
+        "defaultValue": "1.2",
+        "allowedValues": [
+          "1.2"
+        ]
+      },
+      "[Preview]:CMMCL3_ResourceGroupLocationforASCExport": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Resource Group location for ASC Alert export to Log Analytics (Policy: [Preview]: CMMC L3)",
+          "strongType": "location"
+        },
+        "defaultValue": "Resource Group Name",
+        "allowedValues": []
+      },
+      "[Preview]:CMMCL3_ResourceGroupNameASCExport": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Preview]: Resource Group name for ASC Alert export to Log Analytics (Policy: [Preview]: CMMC L3)",
+          "strongType": "existingResourceGroups"
+        },
+        "defaultValue": "Resource Group Location",
+        "allowedValues": []
+      }
+    },
+    "resourceGroups": {},
+    "blueprintName": "CMMC-L3"
+  }
+}
