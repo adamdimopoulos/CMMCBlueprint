@@ -10,13 +10,16 @@ This doc assumes you have a basic understanding of how blueprints work. Addition
 ```powershell 
 Install-Module -Name Az.Blueprint
 ```
-3. Execute the following powershell command, substituting your own subscriptionid and inputpath to import the Blueprint into your subscription: 
+
+# Deployment
+
+1. Execute the following powershell command, substituting your own subscriptionid and inputpath to import the Blueprint into your subscription: 
 ```powershell
 Import-AzBlueprintWithArtifact -Name CMMC-L3 -SubscriptionId 00000000-0000-0000-0000-000000000000 -InputPath  C:\Blueprints\SampleBlueprint
 ```
 **You should now see the Blueprint in the portal.**
 
-4. From the Blueprints blade select CMMC-L3 > Publish Blueprint > Provide a version and click Publish.  
+2. From the Blueprints blade select CMMC-L3 > Publish Blueprint > Provide a version and click Publish.  
 
-5. Click Assign Blueprint and enter the required values.
+3. Click Assign Blueprint and enter the required values.
 
