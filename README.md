@@ -10,7 +10,11 @@ If you don't alread have it, download the [Az.Blueprint module](https://powershe
 ```powershell 
 Install-Module -Name Az.Blueprint
 ```
-Simply execute the following powershell command, substituting your own subscriptionid and inputpath: 
+Execute the following powershell command, substituting your own subscriptionid and inputpath to import the Blueprint into your subscription: 
 ```powershell
 Import-AzBlueprintWithArtifact -Name CMMC-L3 -SubscriptionId 00000000-0000-0000-0000-000000000000 -InputPath  C:\Blueprints\SampleBlueprint
 ```
+**You should now see the Blueprint in the portal.**
+From the Blueprints blade:
+Select CMMC-L3 > Publish Blueprint > Provide a version and click Publish.  Once that is complete, click Assign Blueprint and enter the required values.
+
