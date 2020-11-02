@@ -8,5 +8,8 @@ This doc assumes you have a basic understanding of how blueprints work. Addition
 2. If you don't already have it, **Download the [Az.Blueprint module](https://powershellgallery.com/packages/Az.Blueprint/) from the powershell gallery:**
 ```powershell 
 Install-Module -Name Az.Blueprint
-'''
-3. Simply execute the following powershell command, substituting your own subscriptionid and inputpath: 'Import-AzBlueprintWithArtifact -Name CMMC-L3 -SubscriptionId 00000000-0000-0000-0000-000000000000 -InputPath  C:\Blueprints\SampleBlueprint'
+```
+3. Simply execute the following powershell command, substituting your own subscriptionid and inputpath: 
+```powershell
+Import-AzBlueprintWithArtifact -Name CMMC-L3 -SubscriptionId 00000000-0000-0000-0000-000000000000 -InputPath  C:\Blueprints\SampleBlueprint
+```
