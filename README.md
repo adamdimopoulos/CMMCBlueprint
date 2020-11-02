@@ -16,5 +16,7 @@ Import-AzBlueprintWithArtifact -Name CMMC-L3 -SubscriptionId 00000000-0000-0000-
 ```
 **You should now see the Blueprint in the portal.**
 
-From the Blueprints blade select CMMC-L3 > Publish Blueprint > Provide a version and click Publish.  Once that is complete, click Assign Blueprint and enter the required values.
+From the Blueprints blade select CMMC-L3 > Publish Blueprint > Provide a version and click Publish.  
+
+Once that is complete, click Assign Blueprint and enter the required values.
 
