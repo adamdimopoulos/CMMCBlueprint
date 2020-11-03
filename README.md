@@ -1,5 +1,6 @@
 # Blueprints
-This repository contains the sample Blueprint for CMMC Level 3.  When this Blueprint is assigned to a subscription or management group, the associated CMMC Level 3 artifacts will also be assigned. The underlying policies and controls are derived from those in the NIST 800-171 initiative, plus a few extra polices to address a subset the 20 controls, which are the delta between 800-171 and CMMC Level 3.  Additional policies for both frameworks will be added to this repository over time and prior to releasing in
+This repository contains the sample Blueprint for CMMC Level 3.  When this Blueprint is assigned to a subscription or management group, the associated CMMC Level 3 artifacts will also be assigned. 
+
 # Prerequisites
 This doc assumes you have a basic understanding of how blueprints work. Additionally, as the policy artifact assigned by this blueprint is also a sample, you must first go to the [PolicyInitiatives](https://github.com/adamdimopoulos/PolicyInitiatives) repo and follow the instructions to deploy the initiative into your desired subscription.  Once that is complete, you can return to this repository to import the Blueprint.
 
