@@ -10,7 +10,7 @@ This doc assumes you have a basic understanding of how blueprints work. Addition
   ```
 
 # Deployment
-1. Download this repo and save to a desired local folder.
+1. Download this repo and extract to a desired local folder.
 
 3. Execute the following powershell command, substituting your own subscriptionid and inputpath to import the Blueprint into your subscription: 
   ```powershell
