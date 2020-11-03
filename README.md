@@ -4,7 +4,7 @@ This repository contains the sample Blueprint for CMMC Level 3.  When this Bluep
 # Prerequisites
 This doc assumes you have a basic understanding of how blueprints work. Additionally, as the policy artifact assigned by this blueprint is also a sample, you must first go to the [PolicyInitiatives](https://github.com/adamdimopoulos/PolicyInitiatives) repo and follow the instructions to deploy the initiative into your desired subscription.  Once that is complete, you can return to this repository to import the Blueprint.
 
- **Download the [Az.Blueprint module](https://powershellgallery.com/packages/Az.Blueprint/) from the powershell gallery:**
+ **If you do not already have it, download the [Az.Blueprint module](https://powershellgallery.com/packages/Az.Blueprint/) from the powershell gallery:**
   ```powershell 
   Install-Module -Name Az.Blueprint
   ```
