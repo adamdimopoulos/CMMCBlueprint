@@ -18,7 +18,11 @@ This doc assumes you have a basic understanding of how blueprints work. Addition
   ```
 **You should now see the Blueprint in the portal.**
 
-4. From the Blueprints blade select 'CMMC-L3' > 'Publish Blueprint' > 'Provide a version' and click 'Publish'.  
+4. From the Blueprints blade select 'CMMC-L3' > 'Publish Blueprint' > Provide a version and click 'Publish'.  
 
 5. Click 'Assign Blueprint' and enter the required values.
+
+**After a few minutes the Blueprint Assignment should be visible in the Policy > Compliance blade.**
+
+
 
