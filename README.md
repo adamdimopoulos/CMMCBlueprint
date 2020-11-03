@@ -1,29 +1,35 @@
-# Blueprints
-This repository contains the sample Blueprint for CMMC Level 3.  When this Blueprint is assigned to a subscription or management group, the associated CMMC Level 3 artifacts will also be assigned. 
+# Microsoft CMMC Acceleration Program
+This resource is part of the Microsoft Cybersecurity Maturity Model Certification (CMMC) Acceleration Program. Go [here](https://aka.ms/CMMCResponse) to learn more about the program.
 
-# Prerequisites
-This doc assumes you have a basic understanding of how blueprints work. Additionally, as the policy artifact assigned by this blueprint is also a sample, you must first go to the [PolicyInitiatives](https://github.com/adamdimopoulos/PolicyInitiatives) repo and follow the instructions to deploy the initiative into your desired subscription.  Once that is complete, you can return to this repository to import the Blueprint.
+# Azure Blueprint for CMMC Level 3
+This repository contains a sample Azure Blueprint for CMMC Level 3.  When this Blueprint is assigned to a subscription or management group, the associated CMMC Level 3 artifacts will also be assigned.
 
- **If you do not already have it, download the [Az.Blueprint module](https://powershellgallery.com/packages/Az.Blueprint/) from the powershell gallery:**
+>_The Azure Blueprint for CMMC Level 3 is based upon available information to date and is provided as a sample resource only. Microsoft is not a CMMC accrediting body and thus cannot guarantee any outcome under the formal CMMC review process._
+
+## Prerequisites
+1. You must first deploy the related [Policy Initative](https://github.com/adamdimopoulos/PolicyInitiatives) into your target subscription before applying this sample Blueprint. Do not proceed until this step is completed.
+
+2. You should have a basic understanding of [Azure Blueprints](https://azure.microsoft.com/en-us/services/blueprints/) before applying this sample. Do not apply this Blueprint in any production subscription without first understanding and accepting the potential impact.
+
+3. Install the [Az.Blueprint](https://powershellgallery.com/packages/Az.Blueprint/) PowerShell cmdlet, if not already installed.
   ```powershell 
   Install-Module -Name Az.Blueprint
   ```
 
-# Deployment
-1. Download this repo and extract to a desired local folder.
+## Deployment
+1. Download this repo and extract to a local folder.
 
-3. Execute the following powershell command, substituting your own subscriptionid and inputpath to import the Blueprint into your subscription: 
+2. Execute the following PowerShell command to import the Blueprint into your subscription. Substitute your own SubscriptionId and InputPath.
   ```powershell
   Import-AzBlueprintWithArtifact -Name CMMC-L3 -SubscriptionId 00000000-0000-0000-0000-000000000000 -InputPath  C:\Blueprints\SampleBlueprint
   ```
-**You should now see the Blueprint in the portal.**
+3. Browse to the Azure Portal and open the **Blueprints** pane. You should see the sample Blueprint if the above command was successful.
 
-4. From the Blueprints blade select 'CMMC-L3' > 'Publish Blueprint' > Provide a version and click 'Publish'.  
+4. From the Blueprints blade select **CMMC-L3** > **Publish Blueprint** > **Provide a version** and click **Publish**.  
 
-5. Click 'Assign Blueprint' and enter the required values.
+5. Click **Assign Blueprint** and enter the required values.
 
 **After a few minutes the Blueprint Assignment should be visible in the Policy > Compliance blade.**
 
-# Next Steps
-Please use this sample to test and provide [feedback](https://aka.ms/feedbackazureblueprintcmmc) on the Blueprint prior to the upcoming preview releases.
-
+## Next Steps
+Please review all aspects of the Blueprint and provide [feedback](https://aka.ms/feedbackazureblueprintcmmc).
