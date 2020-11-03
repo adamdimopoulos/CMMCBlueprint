@@ -1,7 +1,7 @@
 # Microsoft CMMC Acceleration Program
 This resource is part of the Microsoft Cybersecurity Maturity Model Certification (CMMC) Acceleration Program. Go [here](https://aka.ms/CMMCResponse) to learn more about the program.
 
-# Azure Blueprint for CMMC Level 3 (Preview Release)
+# Azure Blueprint for CMMC Level 3 (Preview)
 This repository contains a sample Azure Blueprint for CMMC Level 3.  When this Blueprint is assigned to a subscription or management group, the associated CMMC Level 3 artifacts will also be assigned.
 
 >_The Azure Blueprint for CMMC Level 3 is based upon available information to date and is provided as a sample resource only. Microsoft is not a CMMC accrediting body and thus cannot guarantee any outcome under the formal CMMC review process._
