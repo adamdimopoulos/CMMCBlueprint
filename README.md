@@ -1,7 +1,7 @@
 # Microsoft CMMC Acceleration Program
 This resource is part of the Microsoft Cybersecurity Maturity Model Certification (CMMC) Acceleration Program. Go [here](https://aka.ms/CMMCResponse) to learn more about the program.
 
-# Azure Blueprint for CMMC Level 3
+# Azure Blueprint for CMMC Level 3 (Preview Release)
 This repository contains a sample Azure Blueprint for CMMC Level 3.  When this Blueprint is assigned to a subscription or management group, the associated CMMC Level 3 artifacts will also be assigned.
 
 >_The Azure Blueprint for CMMC Level 3 is based upon available information to date and is provided as a sample resource only. Microsoft is not a CMMC accrediting body and thus cannot guarantee any outcome under the formal CMMC review process._
@@ -23,7 +23,7 @@ This repository contains a sample Azure Blueprint for CMMC Level 3.  When this B
   ```powershell
   Import-AzBlueprintWithArtifact -Name CMMC-L3 -SubscriptionId 00000000-0000-0000-0000-000000000000 -InputPath  C:\Blueprints\SampleBlueprint
   ```
-3. Browse to the Azure Portal and open the **Blueprints** pane. You should see the sample Blueprint if the above command was successful.
+3. Browse to the Azure Portal and open the **Blueprints** blade. You should see the sample Blueprint if the above command was successful.
 
 4. From the Blueprints blade select **CMMC-L3** > **Publish Blueprint** > **Provide a version** and click **Publish**.  
 
